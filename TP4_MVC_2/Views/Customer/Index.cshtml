@@ -1,0 +1,59 @@
+﻿@model IEnumerable<TP4_MVC_2.Models.Customer>
+@{
+}
+<h2>Welcome to Customer Default Page</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Action</th>
+    </tr>
+    @foreach(var obj in Model)
+            {
+                <tr>
+                    <td>@obj.Id</td>
+                    <td>@obj.Name</td>
+                    <td>@obj.Address</td>
+                    <td>@obj.Email</td>
+                    <td>@obj.Gender</td>
+                    <td>
+                        <a onclick="return window.confirm('are you sure to delete this customer ?')" asp-action="DeletCustomer" asp-controller="Customer" asp-route-id="@obj.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+
+</table>
+
+
+
+
+
+
+
+
+
+
+@*<h3>Message: @ViewBag.msg</h3>*@
+
+@*<h3>Message : @ViewData["data"]</h3>*@
+
+@*@{
+        int x = 10;
+        int y = 20;
+        int z = x * y;
+
+    }
+    <h2>Result @z</h2>*@
+
+@*<h3>Customer list</h3>
+    <ul>
+        @foreach(string cname in (List<string>) ViewData["customer"])
+                {
+                    <li>@cname</li>
+                }
+    </ul>*@
+

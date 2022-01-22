@@ -1,0 +1,18 @@
+﻿sp_help departments;
+select* from departments;
+sp_help employees;
+insert into Departments
+values
+('HR'),
+('SALES'),
+('ADMIN'),
+('ACCOUNT'),
+('MARKETING');
+
+INSERT INTO Employees VALUES
+('ABHISHEK','CHAUDHARY','ABH877@GMAIL.COM','842934222','MALE','DELHI',1),
+('RAHUL','CHAUDHARY','ABH877@GMAIL.COM','842934222','MALE','DELHI',1),
+('SUBHAM','CHAUDHARY','SUBHAM77@GMAIL.COM','842934222','MALE','NOIDA',2),
+('MANISH','CHAUDHARY','MAN77@GMAIL.COM','842934222','MALE','DELHI',3),
+('KAPIL','CHAUDHARY','KAPIL77@GMAIL.COM','842934222','MALE','NOIDA',2);
+

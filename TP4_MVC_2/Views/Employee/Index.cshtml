@@ -1,0 +1,10 @@
+﻿@model IEnumerable<TP4_MVC_2.Models.Department>
+@{
+}
+<h3>Department List</h3>
+<ul>
+    @foreach(var dept in Model)
+            {
+                <li><a asp-action="EmployeeList" asp-controller="Employee" asp-route-id="@dept.Id"> @dept.Name </a></li>
+            }
+</ul>
